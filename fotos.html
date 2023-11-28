@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis fotos</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="img/LOGO.png" alt="logo" height="80">
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">inicio</a></li>
+                <li><a href="principal.html">mi perfil</a></li>
+                <li><a href="amigos.html">Mis amigos</a></li>
+                <li><a href="fotos.html">Mis fotos</a></li>
+                <li><a href="agregar_1.html">Buscar Amigos</a></li>
+                <li><a href="memorama.html">Game</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section id="recuadros">
+        <h1>Mis fotos</h1>
+        <h3>
+            <form action="php/SubirFoto.php" method="POST" enctype="multipart/form-data">
+            Añadir imagen: <input name="archivo" id="archivo" type="file" accept=".jpg, .jpeg, .png" required>
+        <input type="submit" name="subir" value="Subir">
+    </form>
+        </h3>
+        <section class="recuadro">
+            <img src="img/yo1.jpg" height="150">
+        </section>
+
+        <section class="recuadro">
+            <img src="img/yo_3vez.jpg" height="150">
+        </section>
+        <section class="recuadro">
+            <img src="img/yo_4vezz.jpg" height="150">
+        </section>
+        <section class="recuadro">
+            <img src="img/yo_4vezz.jpg" height="150">
+        </section>
+        <section class="recuadro">
+            <img src="img/yo_otravez.jpeg" height="150">
+        </section>
+        <section class="recuadro">
+            <img src="img/vaca.jpg" height="150">
+        </section>
+
+    </section>
+</body>
+</html>

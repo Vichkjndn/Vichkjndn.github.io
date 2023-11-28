@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario </title>
+    <link rel="stylesheet" href="estilos.css" type="text/css">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="img/LOGO.png" alt="logo" height="150" width="270">
+        </div>
+    </header>
+    <section id="formulario">
+        <h2>REGISTRO</h2>
+
+        <form name="nuevo usuario" method="post" action="php/ConexionCrearUsuario.php">
+            Nickname:<br>
+            <input type="text" pattern="q-zA-z0-9]+" placeholder="Ingresa los datos" name="nickname"required><br>
+            Contraseña:<br>
+            <input type="password" name="password"  maxlength="20" autocomplete="new-password" placeholder="Ingresa los datos" required><br>
+            Nombre:<br>
+            <input type="text" name="nombre" placeholder="Ingresa tu nombre" required><br>
+            Apellidos:<br>
+            <input type="text" name="apellidos" placeholder="Ingresa los datos"><br>
+            Email:<br>
+            <input type="email" name="email" placeholder="Ingresa tu correo" required><br>
+            Edad:<br>
+            <input type="number" name="edad" min="18" placeholder="Ingresa tu edad"  required><br>
+        descripcion:<br>
+        <textarea name="descripcion" placeholder="Ingresa tu descripcion " required></textarea><br>
+<hr>
+        <input type="submit" name="enviar" class="boton" value="Registro">
+        <input type="reset" class="boton" value="Borrar">
+        </form>
+    </section>
+    <section id="formulario2">
+        <h2>Iniciar Sesion</h2>
+        <form name="contacto" method="post" action="php/IniciarSesion.php">
+            Nickname:<br>
+            <input type="text" name="nickname" placeholder="Ingresa los datos" required><br>
+            Contraseña:<br>
+            <input type="password" name="contraseña"  autocomplete="off" placeholder="Ingresa los datos" required><br>
+        <hr>
+            <input type="submit" name="enviar" class="boton" value="Iniciar Sesion">
+        </form>
+    </section>
+</body>
+</html>
